@@ -1,0 +1,150 @@
+2020-03-16 00:46:49,881 INFO [scheduling-1] o.l.litemall.admin.job.OrderJob [OrderJob.java : 102] 系统开启定时任务检查订单是否已经超期自动确认收货
+2020-03-16 00:46:51,632 ERROR [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler [TaskUtils.java : 96] Unexpected error occurred in scheduled task.
+org.springframework.jdbc.UncategorizedSQLException: 
+### Error querying database.  Cause: java.sql.SQLException: sql injection violation, syntax error: ERROR. pos 154, line 11, column 26, token RPAREN : select
+     
+     
+    
+    id, userId, score, share_score, add_time, update_time
+   
+    from litemall_score
+     
+       
+    
+     WHERE (  userId in )
+### The error may exist in org/linlinjava/litemall/db/dao/LitemallScoreMapper.xml
+### The error may involve org.linlinjava.litemall.db.dao.LitemallScoreMapper.selectByExample
+### The error occurred while executing a query
+### SQL: select                      id, userId, score, share_score, add_time, update_time         from litemall_score                         WHERE (  userId in )
+### Cause: java.sql.SQLException: sql injection violation, syntax error: ERROR. pos 154, line 11, column 26, token RPAREN : select
+     
+     
+    
+    id, userId, score, share_score, add_time, update_time
+   
+    from litemall_score
+     
+       
+    
+     WHERE (  userId in )
+; uncategorized SQLException; SQL state [null]; error code [0]; sql injection violation, syntax error: ERROR. pos 154, line 11, column 26, token RPAREN : select
+     
+     
+    
+    id, userId, score, share_score, add_time, update_time
+   
+    from litemall_score
+     
+       
+    
+     WHERE (  userId in ); nested exception is java.sql.SQLException: sql injection violation, syntax error: ERROR. pos 154, line 11, column 26, token RPAREN : select
+     
+     
+    
+    id, userId, score, share_score, add_time, update_time
+   
+    from litemall_score
+     
+       
+    
+     WHERE (  userId in )
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:89)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:73)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:446)
+	at com.sun.proxy.$Proxy101.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:139)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:76)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy142.selectByExample(Unknown Source)
+	at org.linlinjava.litemall.db.service.LitemallUserPropertyService.getScoreByUserId(LitemallUserPropertyService.java:263)
+	at org.linlinjava.litemall.db.service.LitemallUserPropertyService.shareMoney(LitemallUserPropertyService.java:284)
+	at org.linlinjava.litemall.admin.job.OrderJob.shareMoney(OrderJob.java:104)
+	at sun.reflect.GeneratedMethodAccessor1463.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:45005)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.sql.SQLException: sql injection violation, syntax error: ERROR. pos 154, line 11, column 26, token RPAREN : select
+     
+     
+    
+    id, userId, score, share_score, add_time, update_time
+   
+    from litemall_score
+     
+       
+    
+     WHERE (  userId in )
+	at com.alibaba.druid.wall.WallFilter.checkInternal(WallFilter.java:798)
+	at com.alibaba.druid.wall.WallFilter.connection_prepareStatement(WallFilter.java:251)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_prepareStatement(FilterChainImpl.java:568)
+	at com.alibaba.druid.filter.FilterAdapter.connection_prepareStatement(FilterAdapter.java:929)
+	at com.alibaba.druid.filter.FilterEventAdapter.connection_prepareStatement(FilterEventAdapter.java:122)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_prepareStatement(FilterChainImpl.java:568)
+	at com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl.prepareStatement(ConnectionProxyImpl.java:342)
+	at com.alibaba.druid.pool.DruidPooledConnection.prepareStatement(DruidPooledConnection.java:349)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.instantiateStatement(PreparedStatementHandler.java:87)
+	at org.apache.ibatis.executor.statement.BaseStatementHandler.prepare(BaseStatementHandler.java:88)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.prepare(RoutingStatementHandler.java:59)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:85)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:326)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:143)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy172.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at sun.reflect.GeneratedMethodAccessor448.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:45005)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	... 22 common frames omitted
+Caused by: com.alibaba.druid.sql.parser.ParserException: ERROR. pos 154, line 11, column 26, token RPAREN
+	at com.alibaba.druid.sql.parser.SQLExprParser.primary(SQLExprParser.java:793)
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlExprParser.primary(MySqlExprParser.java:185)
+	at com.alibaba.druid.sql.parser.SQLExprParser.inRest(SQLExprParser.java:1771)
+	at com.alibaba.druid.sql.parser.SQLExprParser.exprRest(SQLExprParser.java:109)
+	at com.alibaba.druid.sql.parser.SQLExprParser.expr(SQLExprParser.java:98)
+	at com.alibaba.druid.sql.parser.SQLExprParser.primary(SQLExprParser.java:282)
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlExprParser.primary(MySqlExprParser.java:185)
+	at com.alibaba.druid.sql.parser.SQLExprParser.expr(SQLExprParser.java:86)
+	at com.alibaba.druid.sql.parser.SQLSelectParser.parseWhere(SQLSelectParser.java:476)
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser.query(MySqlSelectParser.java:182)
+	at com.alibaba.druid.sql.parser.SQLSelectParser.query(SQLSelectParser.java:207)
+	at com.alibaba.druid.sql.parser.SQLSelectParser.select(SQLSelectParser.java:59)
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlStatementParser.parseSelect(MySqlStatementParser.java:113)
+	at com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(SQLStatementParser.java:149)
+	at com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(SQLStatementParser.java:83)
+	at com.alibaba.druid.wall.WallProvider.checkInternal(WallProvider.java:624)
+	at com.alibaba.druid.wall.WallProvider.check(WallProvider.java:578)
+	at com.alibaba.druid.wall.WallFilter.checkInternal(WallFilter.java:785)
+	... 46 common frames omitted
+2020-03-16 01:10:37,589 INFO [scheduling-1] o.l.litemall.admin.job.CouponJob [CouponJob.java : 36] 系统开启任务检查优惠券是否已经过期
+2020-03-16 01:10:37,987 INFO [scheduling-1] o.l.litemall.admin.job.CouponJob [CouponJob.java : 50] 系统结束任务检查优惠券是否已经过期
+2020-03-16 02:10:38,178 INFO [scheduling-1] o.l.litemall.admin.job.CouponJob [CouponJob.java : 36] 系统开启任务检查优惠券是否已经过期
+2020-03-16 02:10:38,507 INFO [scheduling-1] o.l.litemall.admin.job.CouponJob [CouponJob.java : 50] 系统结束任务检查优惠券是否已经过期
+2020-03-16 17:07:59,249 INFO [restartedMain] org.linlinjava.litemall.Application [StartupInfoLogger.java : 50] Starting Application on luck-xianzhi.local with PID 14145 (/Users/luck/WeChatProjects/litemall/litemall-all/target/classes started by luck in /Users/luck/WeChatProjects/litemall)
+2020-03-16 17:07:59,255 DEBUG [restartedMain] org.linlinjava.litemall.Application [StartupInfoLogger.java : 53] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2020-03-16 17:07:59,256 INFO [restartedMain] org.linlinjava.litemall.Application [SpringApplication.java : 679] The following profiles are active: db,core,admin,wx
+2020-03-16 17:08:19,577 INFO [scheduling-1] o.l.litemall.admin.job.CouponJob [CouponJob.java : 36] 系统开启任务检查优惠券是否已经过期
+2020-03-16 17:08:19,907 INFO [scheduling-1] o.l.litemall.admin.job.CouponJob [CouponJob.java : 50] 系统结束任务检查优惠券是否已经过期
+2020-03-16 17:08:21,452 INFO [restartedMain] org.linlinjava.litemall.Application [StartupInfoLogger.java : 59] Started Application in 25.015 seconds (JVM running for 28.476)
+2020-03-16 17:20:27,757 INFO [restartedMain] org.linlinjava.litemall.Application [StartupInfoLogger.java : 50] Starting Application on luck-xianzhi.local with PID 14145 (/Users/luck/WeChatProjects/litemall/litemall-all/target/classes started by luck in /Users/luck/WeChatProjects/litemall)
+2020-03-16 17:20:27,759 DEBUG [restartedMain] org.linlinjava.litemall.Application [StartupInfoLogger.java : 53] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2020-03-16 17:20:27,759 INFO [restartedMain] org.linlinjava.litemall.Application [SpringApplication.java : 679] The following profiles are active: db,core,admin,wx
+2020-03-16 17:20:55,070 INFO [scheduling-1] o.l.litemall.admin.job.CouponJob [CouponJob.java : 36] 系统开启任务检查优惠券是否已经过期
+2020-03-16 17:20:55,646 INFO [scheduling-1] o.l.litemall.admin.job.CouponJob [CouponJob.java : 50] 系统结束任务检查优惠券是否已经过期
+2020-03-16 17:20:58,719 INFO [restartedMain] org.linlinjava.litemall.Application [StartupInfoLogger.java : 59] Started Application in 31.655 seconds (JVM running for 785.71)

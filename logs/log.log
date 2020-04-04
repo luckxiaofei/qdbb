@@ -1,0 +1,29 @@
+2020-04-05 00:00:00,016 INFO [scheduling-1] o.l.litemall.admin.job.OrderJob [OrderJob.java : 102] 系统开启定时任务检查订单是否已经超期自动确认收货
+2020-04-05 00:00:00,320 INFO [scheduling-1] o.l.litemall.admin.job.OrderJob [OrderJob.java : 105] 系统结束定时任务检查订单是否已经超期自动确认收货
+2020-04-05 00:22:34,713 INFO [restartedMain] org.linlinjava.litemall.Application [StartupInfoLogger.java : 50] Starting Application on luck-xianzhi.local with PID 23962 (/Users/luck/WeChatProjects/litemall/litemall-all/target/classes started by luck in /Users/luck/WeChatProjects/litemall)
+2020-04-05 00:22:34,714 DEBUG [restartedMain] org.linlinjava.litemall.Application [StartupInfoLogger.java : 53] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2020-04-05 00:22:34,714 INFO [restartedMain] org.linlinjava.litemall.Application [SpringApplication.java : 679] The following profiles are active: db,core,admin,wx
+2020-04-05 00:22:51,255 INFO [scheduling-1] o.l.litemall.admin.job.CouponJob [CouponJob.java : 36] 系统开启任务检查优惠券是否已经过期
+2020-04-05 00:22:51,475 INFO [scheduling-1] o.l.litemall.admin.job.CouponJob [CouponJob.java : 50] 系统结束任务检查优惠券是否已经过期
+2020-04-05 00:22:52,473 INFO [restartedMain] org.linlinjava.litemall.Application [StartupInfoLogger.java : 59] Started Application in 18.177 seconds (JVM running for 1444.936)
+2020-04-05 00:26:39,330 INFO [restartedMain] org.linlinjava.litemall.Application [StartupInfoLogger.java : 50] Starting Application on luck-xianzhi.local with PID 23962 (/Users/luck/WeChatProjects/litemall/litemall-all/target/classes started by luck in /Users/luck/WeChatProjects/litemall)
+2020-04-05 00:26:39,330 DEBUG [restartedMain] org.linlinjava.litemall.Application [StartupInfoLogger.java : 53] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2020-04-05 00:26:39,330 INFO [restartedMain] org.linlinjava.litemall.Application [SpringApplication.java : 679] The following profiles are active: db,core,admin,wx
+2020-04-05 00:26:50,581 INFO [restartedMain] org.linlinjava.litemall.Application [StartupInfoLogger.java : 50] Starting Application on luck-xianzhi.local with PID 24928 (/Users/luck/WeChatProjects/litemall/litemall-all/target/classes started by luck in /Users/luck/WeChatProjects/litemall)
+2020-04-05 00:26:50,593 DEBUG [restartedMain] org.linlinjava.litemall.Application [StartupInfoLogger.java : 53] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2020-04-05 00:26:50,594 INFO [restartedMain] org.linlinjava.litemall.Application [SpringApplication.java : 679] The following profiles are active: db,core,admin,wx
+2020-04-05 00:27:13,141 INFO [scheduling-1] o.l.litemall.admin.job.CouponJob [CouponJob.java : 36] 系统开启任务检查优惠券是否已经过期
+2020-04-05 00:27:13,293 INFO [scheduling-1] o.l.litemall.admin.job.CouponJob [CouponJob.java : 50] 系统结束任务检查优惠券是否已经过期
+2020-04-05 00:27:15,772 INFO [restartedMain] org.linlinjava.litemall.Application [StartupInfoLogger.java : 59] Started Application in 27.191 seconds (JVM running for 29.027)
+2020-04-05 00:28:37,916 INFO [restartedMain] org.linlinjava.litemall.Application [StartupInfoLogger.java : 50] Starting Application on luck-xianzhi.local with PID 24988 (/Users/luck/WeChatProjects/litemall/litemall-all/target/classes started by luck in /Users/luck/WeChatProjects/litemall)
+2020-04-05 00:28:37,926 DEBUG [restartedMain] org.linlinjava.litemall.Application [StartupInfoLogger.java : 53] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2020-04-05 00:28:37,927 INFO [restartedMain] org.linlinjava.litemall.Application [SpringApplication.java : 679] The following profiles are active: db,core,admin,wx
+2020-04-05 00:28:54,507 INFO [scheduling-1] o.l.litemall.admin.job.CouponJob [CouponJob.java : 36] 系统开启任务检查优惠券是否已经过期
+2020-04-05 00:28:54,652 INFO [scheduling-1] o.l.litemall.admin.job.CouponJob [CouponJob.java : 50] 系统结束任务检查优惠券是否已经过期
+2020-04-05 00:28:56,104 INFO [restartedMain] org.linlinjava.litemall.Application [StartupInfoLogger.java : 59] Started Application in 19.973 seconds (JVM running for 21.247)
+2020-04-05 00:33:54,473 INFO [restartedMain] org.linlinjava.litemall.Application [StartupInfoLogger.java : 50] Starting Application on luck-xianzhi.local with PID 24988 (/Users/luck/WeChatProjects/litemall/litemall-all/target/classes started by luck in /Users/luck/WeChatProjects/litemall)
+2020-04-05 00:33:54,474 DEBUG [restartedMain] org.linlinjava.litemall.Application [StartupInfoLogger.java : 53] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2020-04-05 00:33:54,474 INFO [restartedMain] org.linlinjava.litemall.Application [SpringApplication.java : 679] The following profiles are active: db,core,admin,wx
+2020-04-05 00:34:16,503 INFO [scheduling-1] o.l.litemall.admin.job.CouponJob [CouponJob.java : 36] 系统开启任务检查优惠券是否已经过期
+2020-04-05 00:34:16,694 INFO [scheduling-1] o.l.litemall.admin.job.CouponJob [CouponJob.java : 50] 系统结束任务检查优惠券是否已经过期
+2020-04-05 00:34:17,861 INFO [restartedMain] org.linlinjava.litemall.Application [StartupInfoLogger.java : 59] Started Application in 23.75 seconds (JVM running for 342.985)

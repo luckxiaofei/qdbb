@@ -1,0 +1,856 @@
+2020-04-02 22:45:49,589 INFO [restartedMain] org.linlinjava.litemall.Application [StartupInfoLogger.java : 50] Starting Application on luck-xianzhi.local with PID 47968 (/Users/luck/WeChatProjects/litemall/litemall-all/target/classes started by luck in /Users/luck/WeChatProjects/litemall)
+2020-04-02 22:45:49,599 DEBUG [restartedMain] org.linlinjava.litemall.Application [StartupInfoLogger.java : 53] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2020-04-02 22:45:49,599 INFO [restartedMain] org.linlinjava.litemall.Application [SpringApplication.java : 679] The following profiles are active: db,core,admin,wx
+2020-04-02 22:46:10,236 INFO [scheduling-1] o.l.litemall.admin.job.CouponJob [CouponJob.java : 36] 系统开启任务检查优惠券是否已经过期
+2020-04-02 22:46:10,386 INFO [scheduling-1] o.l.litemall.admin.job.CouponJob [CouponJob.java : 50] 系统结束任务检查优惠券是否已经过期
+2020-04-02 22:46:11,989 ERROR [restartedMain] o.apache.catalina.util.LifecycleBase [DirectJDKLog.java : 175] Failed to start component [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:226)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:259)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:311)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:164)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at org.linlinjava.litemall.Application.main(Application.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalArgumentException: Private key must be accompanied by certificate chain
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.createSSLContext(AbstractJsseEndpoint.java:99)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.initialiseSsl(AbstractJsseEndpoint.java:71)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:227)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1116)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1202)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:568)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005)
+	... 19 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Private key must be accompanied by certificate chain
+	at java.security.KeyStore.setKeyEntry(KeyStore.java:1136)
+	at org.apache.tomcat.util.net.SSLUtilBase.getKeyManagers(SSLUtilBase.java:346)
+	at org.apache.tomcat.util.net.SSLUtilBase.createSSLContext(SSLUtilBase.java:239)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.createSSLContext(AbstractJsseEndpoint.java:97)
+	... 25 common frames omitted
+2020-04-02 22:46:12,032 ERROR [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter [LoggingFailureAnalysisReporter.java : 42] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2020-04-02 22:48:25,358 INFO [restartedMain] org.linlinjava.litemall.Application [StartupInfoLogger.java : 50] Starting Application on luck-xianzhi.local with PID 48056 (/Users/luck/WeChatProjects/litemall/litemall-all/target/classes started by luck in /Users/luck/WeChatProjects/litemall)
+2020-04-02 22:48:25,364 DEBUG [restartedMain] org.linlinjava.litemall.Application [StartupInfoLogger.java : 53] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2020-04-02 22:48:25,364 INFO [restartedMain] org.linlinjava.litemall.Application [SpringApplication.java : 679] The following profiles are active: db,core,admin,wx
+2020-04-02 22:48:48,156 INFO [scheduling-1] o.l.litemall.admin.job.CouponJob [CouponJob.java : 36] 系统开启任务检查优惠券是否已经过期
+2020-04-02 22:48:48,360 INFO [scheduling-1] o.l.litemall.admin.job.CouponJob [CouponJob.java : 50] 系统结束任务检查优惠券是否已经过期
+2020-04-02 22:48:50,102 INFO [restartedMain] org.linlinjava.litemall.Application [StartupInfoLogger.java : 59] Started Application in 26.746 seconds (JVM running for 28.394)
+2020-04-02 22:49:32,893 ERROR [https-jsse-nio-8080-exec-5] o.l.l.c.c.GlobalExceptionHandler [GlobalExceptionHandler.java : 72] 
+### Error querying database.  Cause: java.sql.SQLException: sql injection violation, syntax error: ERROR. pos 624, line 36, column 30, token AND : select count(0) from (select
+     
+     
+          
+          id
+         , 
+          `name`
+         , 
+          brief
+         , 
+          pic_url
+         , 
+          is_hot
+         , 
+          is_new
+         , 
+          is_convert
+         , 
+          give_score
+         , 
+          counter_price
+         , 
+          retail_price
+         , 
+          give_score
+         , 
+          convert_score
+         , 
+          commission
+         
+       
+    from litemall_goods
+     
+       
+    
+     WHERE (  category_id in
+                  
+                
+            
+              
+                  and is_on_sale = ?
+                
+            
+              
+                  and deleted = ?
+                
+            
+              
+                  and is_convert = ? )
+        
+      
+        
+          or(  category_id in
+                  
+                
+            
+              
+                  and is_on_sale = ?
+                
+            
+              
+                  and deleted = ?
+                
+            
+              
+                  and is_convert = ? ) 
+   
+     
+     
+      order by add_time desc) tmp_count
+### The error may exist in org/linlinjava/litemall/db/dao/LitemallGoodsMapper.xml
+### The error may involve org.linlinjava.litemall.db.dao.LitemallGoodsMapper.selectByExampleSelective_COUNT
+### The error occurred while executing a query
+### SQL: select count(0) from (select                                  id          ,            `name`          ,            brief          ,            pic_url          ,            is_hot          ,            is_new          ,            is_convert          ,            give_score          ,            counter_price          ,            retail_price          ,            give_score          ,            convert_score          ,            commission                       from litemall_goods                         WHERE (  category_id in                                                                                   and is_on_sale = ?                                                                and deleted = ?                                                                and is_convert = ? )                                    or(  category_id in                                                                                   and is_on_sale = ?                                                                and deleted = ?                                                                and is_convert = ? )                        order by add_time desc) tmp_count
+### Cause: java.sql.SQLException: sql injection violation, syntax error: ERROR. pos 624, line 36, column 30, token AND : select count(0) from (select
+     
+     
+          
+          id
+         , 
+          `name`
+         , 
+          brief
+         , 
+          pic_url
+         , 
+          is_hot
+         , 
+          is_new
+         , 
+          is_convert
+         , 
+          give_score
+         , 
+          counter_price
+         , 
+          retail_price
+         , 
+          give_score
+         , 
+          convert_score
+         , 
+          commission
+         
+       
+    from litemall_goods
+     
+       
+    
+     WHERE (  category_id in
+                  
+                
+            
+              
+                  and is_on_sale = ?
+                
+            
+              
+                  and deleted = ?
+                
+            
+              
+                  and is_convert = ? )
+        
+      
+        
+          or(  category_id in
+                  
+                
+            
+              
+                  and is_on_sale = ?
+                
+            
+              
+                  and deleted = ?
+                
+            
+              
+                  and is_convert = ? ) 
+   
+     
+     
+      order by add_time desc) tmp_count
+; uncategorized SQLException; SQL state [null]; error code [0]; sql injection violation, syntax error: ERROR. pos 624, line 36, column 30, token AND : select count(0) from (select
+     
+     
+          
+          id
+         , 
+          `name`
+         , 
+          brief
+         , 
+          pic_url
+         , 
+          is_hot
+         , 
+          is_new
+         , 
+          is_convert
+         , 
+          give_score
+         , 
+          counter_price
+         , 
+          retail_price
+         , 
+          give_score
+         , 
+          convert_score
+         , 
+          commission
+         
+       
+    from litemall_goods
+     
+       
+    
+     WHERE (  category_id in
+                  
+                
+            
+              
+                  and is_on_sale = ?
+                
+            
+              
+                  and deleted = ?
+                
+            
+              
+                  and is_convert = ? )
+        
+      
+        
+          or(  category_id in
+                  
+                
+            
+              
+                  and is_on_sale = ?
+                
+            
+              
+                  and deleted = ?
+                
+            
+              
+                  and is_convert = ? ) 
+   
+     
+     
+      order by add_time desc) tmp_count; nested exception is java.sql.SQLException: sql injection violation, syntax error: ERROR. pos 624, line 36, column 30, token AND : select count(0) from (select
+     
+     
+          
+          id
+         , 
+          `name`
+         , 
+          brief
+         , 
+          pic_url
+         , 
+          is_hot
+         , 
+          is_new
+         , 
+          is_convert
+         , 
+          give_score
+         , 
+          counter_price
+         , 
+          retail_price
+         , 
+          give_score
+         , 
+          convert_score
+         , 
+          commission
+         
+       
+    from litemall_goods
+     
+       
+    
+     WHERE (  category_id in
+                  
+                
+            
+              
+                  and is_on_sale = ?
+                
+            
+              
+                  and deleted = ?
+                
+            
+              
+                  and is_convert = ? )
+        
+      
+        
+          or(  category_id in
+                  
+                
+            
+              
+                  and is_on_sale = ?
+                
+            
+              
+                  and deleted = ?
+                
+            
+              
+                  and is_convert = ? ) 
+   
+     
+     
+      order by add_time desc) tmp_count
+org.springframework.jdbc.UncategorizedSQLException: 
+### Error querying database.  Cause: java.sql.SQLException: sql injection violation, syntax error: ERROR. pos 624, line 36, column 30, token AND : select count(0) from (select
+     
+     
+          
+          id
+         , 
+          `name`
+         , 
+          brief
+         , 
+          pic_url
+         , 
+          is_hot
+         , 
+          is_new
+         , 
+          is_convert
+         , 
+          give_score
+         , 
+          counter_price
+         , 
+          retail_price
+         , 
+          give_score
+         , 
+          convert_score
+         , 
+          commission
+         
+       
+    from litemall_goods
+     
+       
+    
+     WHERE (  category_id in
+                  
+                
+            
+              
+                  and is_on_sale = ?
+                
+            
+              
+                  and deleted = ?
+                
+            
+              
+                  and is_convert = ? )
+        
+      
+        
+          or(  category_id in
+                  
+                
+            
+              
+                  and is_on_sale = ?
+                
+            
+              
+                  and deleted = ?
+                
+            
+              
+                  and is_convert = ? ) 
+   
+     
+     
+      order by add_time desc) tmp_count
+### The error may exist in org/linlinjava/litemall/db/dao/LitemallGoodsMapper.xml
+### The error may involve org.linlinjava.litemall.db.dao.LitemallGoodsMapper.selectByExampleSelective_COUNT
+### The error occurred while executing a query
+### SQL: select count(0) from (select                                  id          ,            `name`          ,            brief          ,            pic_url          ,            is_hot          ,            is_new          ,            is_convert          ,            give_score          ,            counter_price          ,            retail_price          ,            give_score          ,            convert_score          ,            commission                       from litemall_goods                         WHERE (  category_id in                                                                                   and is_on_sale = ?                                                                and deleted = ?                                                                and is_convert = ? )                                    or(  category_id in                                                                                   and is_on_sale = ?                                                                and deleted = ?                                                                and is_convert = ? )                        order by add_time desc) tmp_count
+### Cause: java.sql.SQLException: sql injection violation, syntax error: ERROR. pos 624, line 36, column 30, token AND : select count(0) from (select
+     
+     
+          
+          id
+         , 
+          `name`
+         , 
+          brief
+         , 
+          pic_url
+         , 
+          is_hot
+         , 
+          is_new
+         , 
+          is_convert
+         , 
+          give_score
+         , 
+          counter_price
+         , 
+          retail_price
+         , 
+          give_score
+         , 
+          convert_score
+         , 
+          commission
+         
+       
+    from litemall_goods
+     
+       
+    
+     WHERE (  category_id in
+                  
+                
+            
+              
+                  and is_on_sale = ?
+                
+            
+              
+                  and deleted = ?
+                
+            
+              
+                  and is_convert = ? )
+        
+      
+        
+          or(  category_id in
+                  
+                
+            
+              
+                  and is_on_sale = ?
+                
+            
+              
+                  and deleted = ?
+                
+            
+              
+                  and is_convert = ? ) 
+   
+     
+     
+      order by add_time desc) tmp_count
+; uncategorized SQLException; SQL state [null]; error code [0]; sql injection violation, syntax error: ERROR. pos 624, line 36, column 30, token AND : select count(0) from (select
+     
+     
+          
+          id
+         , 
+          `name`
+         , 
+          brief
+         , 
+          pic_url
+         , 
+          is_hot
+         , 
+          is_new
+         , 
+          is_convert
+         , 
+          give_score
+         , 
+          counter_price
+         , 
+          retail_price
+         , 
+          give_score
+         , 
+          convert_score
+         , 
+          commission
+         
+       
+    from litemall_goods
+     
+       
+    
+     WHERE (  category_id in
+                  
+                
+            
+              
+                  and is_on_sale = ?
+                
+            
+              
+                  and deleted = ?
+                
+            
+              
+                  and is_convert = ? )
+        
+      
+        
+          or(  category_id in
+                  
+                
+            
+              
+                  and is_on_sale = ?
+                
+            
+              
+                  and deleted = ?
+                
+            
+              
+                  and is_convert = ? ) 
+   
+     
+     
+      order by add_time desc) tmp_count; nested exception is java.sql.SQLException: sql injection violation, syntax error: ERROR. pos 624, line 36, column 30, token AND : select count(0) from (select
+     
+     
+          
+          id
+         , 
+          `name`
+         , 
+          brief
+         , 
+          pic_url
+         , 
+          is_hot
+         , 
+          is_new
+         , 
+          is_convert
+         , 
+          give_score
+         , 
+          counter_price
+         , 
+          retail_price
+         , 
+          give_score
+         , 
+          convert_score
+         , 
+          commission
+         
+       
+    from litemall_goods
+     
+       
+    
+     WHERE (  category_id in
+                  
+                
+            
+              
+                  and is_on_sale = ?
+                
+            
+              
+                  and deleted = ?
+                
+            
+              
+                  and is_convert = ? )
+        
+      
+        
+          or(  category_id in
+                  
+                
+            
+              
+                  and is_on_sale = ?
+                
+            
+              
+                  and deleted = ?
+                
+            
+              
+                  and is_convert = ? ) 
+   
+     
+     
+      order by add_time desc) tmp_count
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:89)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:73)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:446)
+	at com.sun.proxy.$Proxy79.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:139)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:76)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy104.selectByExampleSelective(Unknown Source)
+	at org.linlinjava.litemall.db.service.LitemallGoodsService.querySelective(LitemallGoodsService.java:198)
+	at org.linlinjava.litemall.wx.web.WxGoodsController.list(WxGoodsController.java:271)
+	at org.linlinjava.litemall.wx.web.WxGoodsController$$FastClassBySpringCGLIB$$7accc3f4.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at org.linlinjava.litemall.wx.web.WxGoodsController$$EnhancerBySpringCGLIB$$7ede0de8.list(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1747)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.sql.SQLException: sql injection violation, syntax error: ERROR. pos 624, line 36, column 30, token AND : select count(0) from (select
+     
+     
+          
+          id
+         , 
+          `name`
+         , 
+          brief
+         , 
+          pic_url
+         , 
+          is_hot
+         , 
+          is_new
+         , 
+          is_convert
+         , 
+          give_score
+         , 
+          counter_price
+         , 
+          retail_price
+         , 
+          give_score
+         , 
+          convert_score
+         , 
+          commission
+         
+       
+    from litemall_goods
+     
+       
+    
+     WHERE (  category_id in
+                  
+                
+            
+              
+                  and is_on_sale = ?
+                
+            
+              
+                  and deleted = ?
+                
+            
+              
+                  and is_convert = ? )
+        
+      
+        
+          or(  category_id in
+                  
+                
+            
+              
+                  and is_on_sale = ?
+                
+            
+              
+                  and deleted = ?
+                
+            
+              
+                  and is_convert = ? ) 
+   
+     
+     
+      order by add_time desc) tmp_count
+	at com.alibaba.druid.wall.WallFilter.checkInternal(WallFilter.java:798)
+	at com.alibaba.druid.wall.WallFilter.connection_prepareStatement(WallFilter.java:251)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_prepareStatement(FilterChainImpl.java:568)
+	at com.alibaba.druid.filter.FilterAdapter.connection_prepareStatement(FilterAdapter.java:929)
+	at com.alibaba.druid.filter.FilterEventAdapter.connection_prepareStatement(FilterEventAdapter.java:122)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_prepareStatement(FilterChainImpl.java:568)
+	at com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl.prepareStatement(ConnectionProxyImpl.java:342)
+	at com.alibaba.druid.pool.DruidPooledConnection.prepareStatement(DruidPooledConnection.java:349)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.instantiateStatement(PreparedStatementHandler.java:87)
+	at org.apache.ibatis.executor.statement.BaseStatementHandler.prepare(BaseStatementHandler.java:88)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.prepare(RoutingStatementHandler.java:59)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:85)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:326)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at com.github.pagehelper.PageInterceptor.executeAutoCount(PageInterceptor.java:201)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:113)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy151.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	... 86 common frames omitted
+Caused by: com.alibaba.druid.sql.parser.ParserException: ERROR. pos 624, line 36, column 30, token AND
+	at com.alibaba.druid.sql.parser.SQLExprParser.primary(SQLExprParser.java:793)
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlExprParser.primary(MySqlExprParser.java:185)
+	at com.alibaba.druid.sql.parser.SQLExprParser.inRest(SQLExprParser.java:1771)
+	at com.alibaba.druid.sql.parser.SQLExprParser.exprRest(SQLExprParser.java:109)
+	at com.alibaba.druid.sql.parser.SQLExprParser.expr(SQLExprParser.java:98)
+	at com.alibaba.druid.sql.parser.SQLExprParser.primary(SQLExprParser.java:282)
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlExprParser.primary(MySqlExprParser.java:185)
+	at com.alibaba.druid.sql.parser.SQLExprParser.expr(SQLExprParser.java:86)
+	at com.alibaba.druid.sql.parser.SQLSelectParser.parseWhere(SQLSelectParser.java:476)
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser.query(MySqlSelectParser.java:182)
+	at com.alibaba.druid.sql.parser.SQLSelectParser.query(SQLSelectParser.java:207)
+	at com.alibaba.druid.sql.parser.SQLSelectParser.select(SQLSelectParser.java:59)
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser.parseTableSource(MySqlSelectParser.java:233)
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser.parseFrom(MySqlSelectParser.java:76)
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser.query(MySqlSelectParser.java:180)
+	at com.alibaba.druid.sql.parser.SQLSelectParser.query(SQLSelectParser.java:207)
+	at com.alibaba.druid.sql.parser.SQLSelectParser.select(SQLSelectParser.java:59)
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlStatementParser.parseSelect(MySqlStatementParser.java:113)
+	at com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(SQLStatementParser.java:149)
+	at com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(SQLStatementParser.java:83)
+	at com.alibaba.druid.wall.WallProvider.checkInternal(WallProvider.java:624)
+	at com.alibaba.druid.wall.WallProvider.check(WallProvider.java:578)
+	at com.alibaba.druid.wall.WallFilter.checkInternal(WallFilter.java:785)
+	... 112 common frames omitted
+2020-04-02 22:52:32,167 INFO [restartedMain] org.linlinjava.litemall.Application [StartupInfoLogger.java : 50] Starting Application on luck-xianzhi.local with PID 48056 (/Users/luck/WeChatProjects/litemall/litemall-all/target/classes started by luck in /Users/luck/WeChatProjects/litemall)
+2020-04-02 22:52:32,168 DEBUG [restartedMain] org.linlinjava.litemall.Application [StartupInfoLogger.java : 53] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2020-04-02 22:52:32,168 INFO [restartedMain] org.linlinjava.litemall.Application [SpringApplication.java : 679] The following profiles are active: db,core,admin,wx
+2020-04-02 22:53:02,734 INFO [scheduling-1] o.l.litemall.admin.job.CouponJob [CouponJob.java : 36] 系统开启任务检查优惠券是否已经过期
+2020-04-02 22:53:02,906 INFO [scheduling-1] o.l.litemall.admin.job.CouponJob [CouponJob.java : 50] 系统结束任务检查优惠券是否已经过期
+2020-04-02 22:53:12,580 INFO [restartedMain] org.linlinjava.litemall.Application [StartupInfoLogger.java : 59] Started Application in 40.879 seconds (JVM running for 290.864)
+2020-04-02 22:53:41,628 INFO [restartedMain] org.linlinjava.litemall.Application [StartupInfoLogger.java : 50] Starting Application on luck-xianzhi.local with PID 48056 (/Users/luck/WeChatProjects/litemall/litemall-all/target/classes started by luck in /Users/luck/WeChatProjects/litemall)
+2020-04-02 22:53:41,629 DEBUG [restartedMain] org.linlinjava.litemall.Application [StartupInfoLogger.java : 53] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2020-04-02 22:53:41,629 INFO [restartedMain] org.linlinjava.litemall.Application [SpringApplication.java : 679] The following profiles are active: db,core,admin,wx
+2020-04-02 22:54:17,551 INFO [scheduling-1] o.l.litemall.admin.job.CouponJob [CouponJob.java : 36] 系统开启任务检查优惠券是否已经过期
+2020-04-02 22:54:17,897 INFO [scheduling-1] o.l.litemall.admin.job.CouponJob [CouponJob.java : 50] 系统结束任务检查优惠券是否已经过期
+2020-04-02 22:54:21,084 INFO [restartedMain] org.linlinjava.litemall.Application [StartupInfoLogger.java : 59] Started Application in 39.81 seconds (JVM running for 359.366)

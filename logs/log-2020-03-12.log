@@ -1,0 +1,4 @@
+2020-03-12 00:52:40,599 INFO [scheduling-1] o.l.litemall.admin.job.CouponJob [CouponJob.java : 36] 系统开启任务检查优惠券是否已经过期
+2020-03-12 00:52:41,063 INFO [scheduling-1] o.l.litemall.admin.job.CouponJob [CouponJob.java : 50] 系统结束任务检查优惠券是否已经过期
+2020-03-12 01:52:41,839 INFO [scheduling-1] o.l.litemall.admin.job.CouponJob [CouponJob.java : 36] 系统开启任务检查优惠券是否已经过期
+2020-03-12 01:52:43,010 INFO [scheduling-1] o.l.litemall.admin.job.CouponJob [CouponJob.java : 50] 系统结束任务检查优惠券是否已经过期
