@@ -54,6 +54,9 @@ Page({
         let that = this;
         util.request(api.IndexUrl).then(function (res) {
             if (res.errno === 0) {
+                that.setData({
+                    channel: [],
+                })
                 let channel = that.data.channel;
                 channel.push({id: 0, name: "首页"})
                 that.setData({
